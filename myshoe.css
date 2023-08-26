@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #cb031d;
+    color: white;
+    overflow: hidden;
+    
+}
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 12px;
+
+}
+a{
+    text-decoration: none;
+    padding: 12px;
+    color:white ;
+}
+.brand{
+    font-family: 'Borel', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.purchase{
+    background-color: white;
+    color: red;
+    padding:  8px 12px;
+    border-radius: 12px;
+}
+.purchase:hover{
+    background-color: red;
+    color: white;
+}
+.hero{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+}
+img{
+    width: 40vw;
+    
+}
+.hero-title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.description{
+    color: whitesmoke;
+    font-weight: 300;
+    margin: 12px 0;
+}
+
+/* Responsiveness  */
+@media  screen and (max-width:600px) {
+    body{
+        overflow: scroll;
+    };
+    .navbar{
+        width: 95%;
+    }
+    .brand{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .hero-title{
+        font-size: 24px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    img{
+         width: 80vw;
+    };
+    .hero-text{
+        text-align: center;
+    }
+
+
+}
+
